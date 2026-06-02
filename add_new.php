@@ -6,7 +6,8 @@ $categories = mysqli_query($conn, "SELECT * FROM category");
 if(isset($_POST['add'])){
 
     $title = $_POST['title'];
-    $category = $_POST['category']; // id التصنيف
+    $category = $_POST['category']; 
+    
     $details = $_POST['details'];
 
     $image = $_FILES['image']['name'];
